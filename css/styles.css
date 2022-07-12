@@ -1,3 +1,12 @@
 body {
-background-color: bisque;
+background-color: white;
+}
+
+.header {
+  padding:.5px;
+  text-align: center;
+  background: palegreen;
+  font-size: 20px;
+  border-style: solid;
+
 }
