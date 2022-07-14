@@ -13,6 +13,7 @@ body {
   font-weight: bold;
 }
 
+/* This is the CSS for the form*/
 input[type="text"],
 select {
   width: 100%;
@@ -47,3 +48,5 @@ input[type="button"]:hover {
   width: 50%;
   margin-top: 15%;
 }
+
+/* End of the CSS for the form */
