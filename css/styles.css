@@ -1,14 +1,12 @@
 body {
-background: linear-gradient(to bottom right, palegreen, white);
-background-attachment: fixed;
+  background: linear-gradient(to bottom right, palegreen, white);
+  background-attachment: fixed;
 }
 
-.mid{
+.mid {
   position: absolute;
   top: 8%;
   width: 100%;
   text-align: center;
   font-size: 60px;
 }
-
-
