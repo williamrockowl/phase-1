@@ -1,12 +1,14 @@
 body {
-background-color: white;
+background: linear-gradient(to bottom right, palegreen, white);
+background-attachment: fixed;
 }
 
-.header {
-  padding:.5px;
+.mid{
+  position: absolute;
+  top: 8%;
+  width: 100%;
   text-align: center;
-  background: palegreen;
-  font-size: 20px;
-  border-style: solid;
-
+  font-size: 60px;
 }
+
+
