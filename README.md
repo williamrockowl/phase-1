@@ -1,8 +1,13 @@
 # Phase-1 Project
 
-Foobar is a Python library for dealing with word pluralization.
+StockWatchers is a HTML/CSS/JS project to track the stocks of congress members.
+
+## Introduction
+
+This project is the first of five done as a Flatiron Flex SWE student. It incorporates a bunch of concepts learned in the first Phase.
 
 ## Installation
+
 
 
 
