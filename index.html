@@ -12,16 +12,29 @@
     <!--This is the HTML for the form-->
     <div id="formation">
       <form action="">
-        <label for="cname">Congress First Name</label>
-        <input type="text" id="fname" name="firstName" placeholder="..." />
-        <label for="cname">Congress Second Name</label>
-        <input type="text" id="sname" name="secondName" placeholder="..." />
-        <input type="button" value="Button" />
-        <input type="button" value="Alert" id="alert" />
+        <h2>Search By:</h2>
+        <label for="cname">Representative Name</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstName"
+          placeholder="Hon. Alan S. Lowenthal"
+        />
+        <label for="cname">District</label>
+        <input type="text" id="dtrct" name="district" placeholder="CA47" />
+        <label for="cname">Transaction Date</label>
+        <input
+          type="text"
+          id="tdate"
+          name="tranDate"
+          placeholder="S&P Global Inc"
+        />
+        <input type="button" value="Search" />
       </form>
     </div>
     <!-- End of the HTML for the form -->
 
+    <button id="alert">Alert</button>
     <!--- Button to change the background color -->
     <button id="btn">Color Change</button>
   </body>
