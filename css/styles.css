@@ -50,3 +50,15 @@ input[type="button"]:hover {
 }
 
 /* End of the CSS for the form */
+
+/* CSS for Button to change the background color */
+#btn {
+  background-color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
