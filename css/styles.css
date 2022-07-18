@@ -54,11 +54,16 @@ input[type="button"]:hover {
 /* CSS for Button to change the background color */
 #btn {
   background-color: white;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-weight: bold;
   width: 70px;
   height: 70px;
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+.coin {
+  width: 10%;
+  border-radius: 50%;
 }
