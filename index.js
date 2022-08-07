@@ -1,8 +1,8 @@
 // Eventlistener if button was clicked
 document
   .querySelector("#alert")
-  .addEventListener("click", () => alert("Alert!!"));
+  .addEventListener("click", () => (document.body.style.color = "black"));
 
 // Eventlistener to change Background color
 const btn = document.getElementById("btn");
-btn.addEventListener("click", () => (document.body.style.color = "red"));
+btn.addEventListener('mouseover', () => (document.body.style.color = "red"));
