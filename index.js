@@ -1,6 +1,6 @@
 // Eventlistener if button was clicked
 document
-  .querySelector("#alert")
+  .querySelector("#reset")
   .addEventListener("click", () => (document.body.style.color = "black"));
 
 // Eventlistener to change Background color
