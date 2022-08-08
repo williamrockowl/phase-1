@@ -15,14 +15,14 @@ This project was made following specific criteria.
 ### Executing program
 
 - How to run the program
-- Step-by-step bullets
-
 * Open your terminal
 * cd to the Directory you want
-```cd [Directory of your choosing]
+```
+cd [Directory of your choosing]
 ```
 * mkdir if needed
-```mkdir [Name of Directory]
+```
+mkdir [Name of Directory]
 ```
 * Copy SSH and use it with the git clone command
 ```
