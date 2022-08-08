@@ -12,11 +12,6 @@ This project was made following specific criteria.
 4. Use 3 different event-listeners for interactivity.
 5. Implements one iteration of array iteration.
 
-### Installing
-
-- How/where to download your program
-- Any modifications needed to be made to files/folders
-
 ### Executing program
 
 - How to run the program
@@ -24,10 +19,13 @@ This project was made following specific criteria.
 
 * Open your terminal
 * cd to the Directory you want
-* mkdir if needed
-* Copy SSH and use it with the git clone command
-
 ```cd [Directory of your choosing]
+```
+* mkdir if needed
+```mkdir [Name of Directory]
+```
+* Copy SSH and use it with the git clone command
+```
 git clone [ssh link]
 ```
 
@@ -35,13 +33,10 @@ git clone [ssh link]
 
 ## Help
 
-Any advice for common problems or issues.
-
-```
+If there's any ideas or suggestions, please let me know.
 
 ## Authors
 
-Contributors names and contact info:
 William Saulon (WilliamSCode)
 
 ## License
@@ -52,4 +47,4 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 ## Acknowledgments
 
 API Site: https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/
-```
+
