@@ -20,7 +20,6 @@ fetch(
   })
   // Added a catch in case something goes wrong.
   .catch(function (err) {
-    console.log("Somethings wrong here.");
+    console.log('Somethings wrong here. ' + err);
   });
-
 
