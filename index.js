@@ -15,11 +15,22 @@ fetch(
     console.log(response);
     return response.json();
   })
-  .then(function (data) {
-    console.log(data);
+  .then(function (stocks) {
+    let placeholder = document.querySelector("#data-output");
+    let out = "";
+    for (let stock of stocks) {
+      out += `
+        <tr>
+          <td> ${stock.representative}</td>
+          <td> ${stock.district}</td>
+          <td> ${stock.asset_description}</td>
+        </tr>
+          `;
+    }
+
+    placeholder.innerHTML = out;
   })
   // Added a catch in case something goes wrong.
   .catch(function (err) {
-    console.log('Somethings wrong here. ' + err);
+    console.log("Somethings wrong here. " + err);
   });
-

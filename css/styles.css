@@ -85,3 +85,15 @@ input[type="button"]:hover {
   top: 0;
   left: 0;
 }
+
+th {
+  font-size: larger;
+  text-align: center;
+  background-color: #ccc;
+}
+
+td {
+  background-color: white;
+  border-radius: 50%;
+  text-align: center;
+}
