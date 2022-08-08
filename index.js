@@ -22,7 +22,7 @@ fetch(
       out += `
         <tr>
           <td> ${stock.representative}</td>
-          <td> ${stock.district}</td>
+          <td> ${stock.amount}</td>
           <td> ${stock.asset_description}</td>
         </tr>
           `;
