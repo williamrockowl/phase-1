@@ -57,7 +57,7 @@ input[type="button"]:hover {
 
 /* End of the CSS for the form */
 
-/* CSS for Button to change the background color */
+/* CSS for Button to change the content color */
 #btn {
   background-color: white;
   font-family: "Courier New", Courier, monospace;
@@ -74,6 +74,7 @@ input[type="button"]:hover {
   border-radius: 50%;
 }
 
+/* CSS for Button to reset the content color */
 #reset {
   background-color: palegreen;
   font-family: "Courier New", Courier, monospace;
