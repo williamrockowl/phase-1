@@ -14,7 +14,7 @@ This project was made following specific criteria.
 
 ### Executing program
 
-- How to run the program
+* How to run the program
 * Open your terminal
 * cd to the Directory you want
 ```
