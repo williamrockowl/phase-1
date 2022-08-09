@@ -52,3 +52,5 @@ var fetchMe = fetch(
   .catch(function (err) {
     console.log("Somethings wrong here. " + err);
   });
+
+console.log(fetchMe.stringify);
