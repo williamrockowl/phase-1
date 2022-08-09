@@ -33,3 +33,26 @@ fetch(
   .catch(function (err) {
     console.log("Somethings wrong here. " + err);
   });
+
+
+
+  // Work In Progress
+$('#fname').on('keyup', function(){
+  var value = $(this).val()
+  console.log('Value: ', value)
+  var data = searchTable(value, stocks)
+})
+
+
+function searchTable(value, data){
+  var filteredData = []
+  for(let i = 0; i < data.length; i++){
+    value = value.toLowerCase();
+    var representative = data[i].representative.toLowerCase();
+
+    if(representative.includes(value)){
+      filteredData.push(data[i])
+    }
+  }
+  return filteredData;
+}
