@@ -32,7 +32,7 @@ select {
   text-align: center;
 }
 
-input[type="button"] {
+#bat {
   width: 100%;
   background-color: #4caf50;
   color: white;
@@ -96,4 +96,3 @@ td {
   background-color: white;
   text-align: center;
 }
-

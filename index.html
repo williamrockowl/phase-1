@@ -12,7 +12,7 @@
     <!--This is the HTML for the form-->
     <div id="formation">
       <form action="">
-        <h2>Search By:</h2>
+        <h2>Filter By:</h2>
         <label for="cname">Representative Name</label>
         <input
           type="text"
@@ -21,7 +21,12 @@
           placeholder="Hon. Alan S. Lowenthal"
         />
         <label for="cname">Amount</label>
-        <input type="text" id="dtrct" name="district" placeholder="$50,001 - $100,000" />
+        <input
+          type="text"
+          id="dtrct"
+          name="district"
+          placeholder="$50,001 - $100,000"
+        />
         <label for="cname">Asset</label>
         <input
           type="text"
@@ -29,7 +34,6 @@
           name="tranDate"
           placeholder="Valero Energy Corporation"
         />
-        <input type="button" value="Search" />
       </form>
     </div>
     <!-- End of the HTML for the form -->
@@ -42,9 +46,8 @@
           <th>Asset</th>
         </tr>
       </thead>
-      <tbody id = "data-output"></tbody>
+      <tbody id="data-output"></tbody>
     </table>
-
 
     <button id="reset">Reset</button>
     <!--- Button to change the background color -->

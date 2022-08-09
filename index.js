@@ -27,7 +27,6 @@ fetch(
         </tr>
           `;
     }
-
     placeholder.innerHTML = out;
   })
   // Added a catch in case something goes wrong.
