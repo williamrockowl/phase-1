@@ -36,7 +36,7 @@ fetch(
 
 
 
-  // Work In Progress
+// Work In Progress
 $('#fname').on('keyup', function(){
   var value = $(this).val()
   console.log('Value: ', value)
