@@ -27,7 +27,7 @@ keyBoard2.addEventListener("keydown", (e) => {
 });
 
 // Using Fetch to grab Data from API
-var fetchMe = fetch(
+fetch(
   "https://house-stock-watcher-data.s3-us-west-2.amazonaws.com/data/all_transactions.json"
 )
   .then(function (response) {
