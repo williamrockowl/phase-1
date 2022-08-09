@@ -10,6 +10,7 @@ btn.addEventListener("mouseover", () => (document.body.style.color = "red"));
 // EventListener to decline invalid variables for first search bar
 const keyBoard = document.querySelector(".keyboard1");
 keyBoard.addEventListener("keydown", (e) => {
+  console.log(e.key);
   if (e.code.includes("Digit")) {
     alert("There is no option containing numbers (0-9)");
     e.preventDefault();
@@ -26,7 +27,7 @@ keyBoard2.addEventListener("keydown", (e) => {
 });
 
 // Using Fetch to grab Data from API
-fetch(
+var fetchMe = fetch(
   "https://house-stock-watcher-data.s3-us-west-2.amazonaws.com/data/all_transactions.json"
 )
   .then(function (response) {
@@ -51,23 +52,3 @@ fetch(
   .catch(function (err) {
     console.log("Somethings wrong here. " + err);
   });
-
-// Work In Progress
-$("#fname").on("keydown", function () {
-  var value = $(this).val();
-  console.log("Value: ", value);
-  var data = searchTable(value, stocks);
-});
-
-function searchTable(value, data) {
-  var filteredData = [];
-  for (let i = 0; i < data.length; i++) {
-    value = value.toLowerCase();
-    var representative = data[i].representative.toLowerCase();
-
-    if (representative.includes(value)) {
-      filteredData.push(data[i]);
-    }
-  }
-  return filteredData;
-}
