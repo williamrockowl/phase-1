@@ -7,6 +7,24 @@ document
 const btn = document.getElementById("btn");
 btn.addEventListener("mouseover", () => (document.body.style.color = "red"));
 
+// EventListener to decline invalid variables for first search bar
+const keyBoard = document.querySelector(".keyboard1");
+keyBoard.addEventListener("keydown", (e) => {
+  if (e.code.includes("Digit")) {
+    alert("There is no option containing numbers (0-9)");
+    e.preventDefault();
+  }
+});
+
+// EventListener to decline invalid variables for second search bar
+const keyBoard2 = document.querySelector(".keyboard2");
+keyBoard2.addEventListener("keydown", (e) => {
+  if (e.code.includes("Key")) {
+    alert("There is no option containing letters (A-Z)");
+    e.preventDefault();
+  }
+});
+
 // Using Fetch to grab Data from API
 fetch(
   "https://house-stock-watcher-data.s3-us-west-2.amazonaws.com/data/all_transactions.json"
@@ -34,24 +52,21 @@ fetch(
     console.log("Somethings wrong here. " + err);
   });
 
-
-
 // Work In Progress
-$('#fname').on('keyup', function(){
-  var value = $(this).val()
-  console.log('Value: ', value)
-  var data = searchTable(value, stocks)
-})
+$("#fname").on("keyup", function () {
+  var value = $(this).val();
+  console.log("Value: ", value);
+  var data = searchTable(value, stocks);
+});
 
-
-function searchTable(value, data){
-  var filteredData = []
-  for(let i = 0; i < data.length; i++){
+function searchTable(value, data) {
+  var filteredData = [];
+  for (let i = 0; i < data.length; i++) {
     value = value.toLowerCase();
     var representative = data[i].representative.toLowerCase();
 
-    if(representative.includes(value)){
-      filteredData.push(data[i])
+    if (representative.includes(value)) {
+      filteredData.push(data[i]);
     }
   }
   return filteredData;
