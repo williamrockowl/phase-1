@@ -53,7 +53,7 @@ fetch(
   });
 
 // Work In Progress
-$("#fname").on("keyup", function () {
+$("#fname").on("keydown", function () {
   var value = $(this).val();
   console.log("Value: ", value);
   var data = searchTable(value, stocks);
