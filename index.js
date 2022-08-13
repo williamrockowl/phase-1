@@ -1,3 +1,4 @@
+// Global Variable(s)
 let stocksdata;
 
 // Eventlistener if button was clicked
