@@ -1,3 +1,5 @@
+let stocksdata;
+
 // Eventlistener if button was clicked
 document
   .querySelector("#reset")
@@ -10,7 +12,7 @@ btn.addEventListener("mouseover", () => (document.body.style.color = "red"));
 // EventListener to decline invalid variables for first search bar
 const keyBoard = document.querySelector(".keyboard1");
 keyBoard.addEventListener("keydown", (e) => {
-  console.log(e.key);
+  console.log(e.target.value);
   if (e.code.includes("Digit")) {
     alert("There is no option containing numbers (0-9)");
     e.preventDefault();
@@ -31,11 +33,12 @@ fetch(
   "https://house-stock-watcher-data.s3-us-west-2.amazonaws.com/data/all_transactions.json"
 )
   .then(function (response) {
-    console.log(response);
+    //console.log(response.json());
     return response.json();
   })
   .then(function (stocks) {
     let placeholder = document.querySelector("#data-output");
+    stocksdata = stocks;
     let out = "";
     for (let stock of stocks) {
       out += `
@@ -53,4 +56,22 @@ fetch(
     console.log("Somethings wrong here. " + err);
   });
 
-console.log(fetchMe.stringify);
+// Filtering the first search bar
+const keyBoard123 = document.querySelector(".keyboard1");
+keyBoard.addEventListener("keydown", (e) => {
+  const filteredStocks = stocksdata.filter((stock) =>
+    stock.representative.toLowerCase().includes(e.target.value.toLowerCase())
+  );
+  let placeholder = document.querySelector("#data-output");
+  let out = "";
+  for (let stock of filteredStocks) {
+    out += `
+      <tr>
+        <td> ${stock.representative}</td>
+        <td> ${stock.amount}</td>
+        <td> ${stock.asset_description}</td>
+      </tr>
+        `;
+  }
+  placeholder.innerHTML = out;
+});
